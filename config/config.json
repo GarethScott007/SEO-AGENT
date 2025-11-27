@@ -1,0 +1,12 @@
+{
+  "site_url": "https://sabaifly.com",
+  "cms_type": "nextjs",
+  "sabaifly_repo": "GarethScott007/sabaifly",  // Your actual SabaiFly repo name
+  "pages_to_rewrite_daily": 3,
+  "new_articles_per_day": 1,
+  "ai_primary": "grok4",  // Or "claude_opus"
+  "ai_fallback": "claude_opus",
+  "google_property_id": "your-ga4-property-id",  // e.g., "properties/123456789"
+  "search_console_site": "https://www.google.com/webmasters/tools/home?siteUrl=https://sabaifly.com/",
+  "notification_webhook": "your-slack-or-discord-webhook-url"
+}
