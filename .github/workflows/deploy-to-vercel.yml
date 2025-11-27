@@ -1,0 +1,11 @@
+name: Deploy to Vercel on SEO Update
+on: [push]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Trigger Vercel Deploy
+        run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_YourVercelProjectId/${{ github.sha }}
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}  # Add this secret too
